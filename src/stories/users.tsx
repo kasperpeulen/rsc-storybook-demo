@@ -1,4 +1,4 @@
-import React, {type ReactNode, Suspense} from "react";
+import React, { type ReactNode, Suspense } from "react";
 import { saveToDb } from "./actions";
 import { Like } from "./like";
 
@@ -24,14 +24,13 @@ export function Text({ children }: { children: ReactNode }) {
   return <div>{children}</div>;
 }
 
-
-export async function ServerComponent({ label }: { label: string}) {
- return (
-   <div>
-     <Text>All users {label}</Text>
-     <Suspense fallback={"Rendering async server components on the client..."}>
-       <Users />
-     </Suspense>
-   </div>
- )
+export async function ServerComponent({ label }: { label: string }) {
+  return (
+    <div>
+      <Text>All users {label}</Text>
+      <Suspense fallback={"Rendering async server components on the client..."}>
+        <Users />
+      </Suspense>
+    </div>
+  );
 }

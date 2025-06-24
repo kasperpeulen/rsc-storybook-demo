@@ -20,7 +20,10 @@ const config: StorybookConfig = {
     },
     renderer: undefined,
   },
-  webpackFinal: async (config) => {
+  webpackFinal: async (config, options) => {
+    config.resolve.alias[
+      "@vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts"
+    ] = "next/dist/client/dev/noop-turbopack-hmr";
     config.experiments!.layers = true;
     config.plugins!.unshift(new ReactServerWebpackPlugin({ isServer: false }));
     config.module?.rules?.push(
