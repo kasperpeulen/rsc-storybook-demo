@@ -12,36 +12,23 @@
   },
   "dependencies": {
     "next": "15.3.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
-    "@babel/preset-react": "latest",
-    "@babel/preset-typescript": "latest",
     "@eslint/eslintrc": "^3",
-    "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
-    "@storybook/nextjs": "^9.1.0-alpha.6",
-    "@storybook/react-webpack5": "^9.1.0-alpha.6",
+    "@storybook/experimental-nextjs-rsc": "0.0.0-pr-31893-sha-f0bf2189",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "babel-loader": "latest",
-    "babel-preset-react-app": "latest",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
-    "eslint-plugin-storybook": "^9.1.0-alpha.6",
-    "html-webpack-plugin": "latest",
+    "eslint-plugin-storybook": "0.0.0-pr-31893-sha-f0bf2189",
     "patch-package": "^8.0.0",
     "prettier": "^3.5.3",
-    "react-server-dom-webpack": "^19.1.0",
-    "storybook": "^9.1.0-alpha.6",
+    "storybook": "0.0.0-pr-31893-sha-f0bf2189",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "webpack": "^5",
-    "webpack-cli": "latest",
-    "webpack-dev-server": "latest"
+    "typescript": "^5"
   }
 }

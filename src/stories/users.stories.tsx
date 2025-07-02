@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import type { Meta, StoryObj } from "@storybook/experimental-nextjs-rsc";
 import React, { Suspense } from "react";
 
 import { Users, Text } from "./users";
